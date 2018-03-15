@@ -1,0 +1,28 @@
+.profile-image{
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.list-item{
+	list-style-type: none;
+}
+
+@keyframes flash-message{
+	0% {opacity: 1;}
+	100%{opacity: 0; display: none;}
+}
+
+#flash-message{
+	position: absolute;
+	display: block;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	animation: flash-message 4s ease-in-out;
+}
+
+.post-text{
+	height: 100px;
+	overflow: hidden;
+}
